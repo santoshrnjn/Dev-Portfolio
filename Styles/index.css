@@ -6,6 +6,8 @@
   --secondary-color: #bbbbbb;
   --bg-color-list-in-skill-section: #81818180;
   --card-bg-color: #232432;
+  --bg-color-for-form-inputs: #ffffff24;
+  --border-color-for-form-inputs: #c4c4c44a;
 }
 
 * {
@@ -412,4 +414,56 @@ p {
 .blogs_section .card-body a {
   color: var(--pink);
   font-size: 13px;
+}
+
+/* Contact-Section */
+.contact_section {
+  background: #282a39;
+  padding-bottom: 170px;
+}
+.contact_section .heading {
+  font-weight: 600;
+  font-size: 50px;
+}
+.contact_section hr {
+  border: 0.5px solid var(--pink);
+  width: 6rem;
+  margin: 12px 0px;
+}
+.contact_section .txt {
+  color: var(--secondary-color);
+  font-size: 15px;
+}
+.contact_section form .form-control {
+  background: var(--bg-color-for-form-inputs);
+  border: 2px solid var(--border-color-for-form-inputs);
+  border-radius: 0px;
+  color: white;
+}
+.contact_section form button {
+  background: var(--pink);
+  border: 2px solid var(--pink);
+  color: white;
+  width: 100px;
+  font-size: 15px;
+}
+.contact_section form button:hover {
+  animation: swing;
+  animation-duration: 0.5s;
+}
+.contact_section ul li {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.contact_section ul li i {
+  margin-right: 10px;
+}
+.contact_section ul li .fa {
+  color: var(--pink);
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .contact_section .heading {
+    font-size: 40px;
+  }
 }
