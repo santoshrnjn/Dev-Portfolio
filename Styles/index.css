@@ -521,6 +521,10 @@ p {
   transition: 0.5s;
   margin-right: 5px;
 }
+.footer-area .list-group .list-group-item a {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width: 767px) and (min-width: 500px) {
   .footer-area .links {
     margin-bottom: 30px;
