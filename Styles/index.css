@@ -516,6 +516,7 @@ p {
 }
 .footer-area .list-group .list-group-item i {
   font-size: 12px;
+  cursor: pointer;
   color: var(--pink);
   transition: 0.5s;
   margin-right: 5px;
