@@ -54,7 +54,11 @@ canvas.particles-js-canvas-el {
 /* Navbar */
 
 .nav_section .navbar-brand {
-  font-size: 22px;
+  font-size: 26px;
+  padding-left: 180px;
+}
+.nav_section .navbar-light.scrolled {
+  background: rgb(49, 49, 49) !important;
 }
 
 .nav_section .navbar-brand span {
@@ -66,7 +70,7 @@ canvas.particles-js-canvas-el {
 }
 
 .nav_section .navbar-nav li a {
-  font-style: 15px;
+  font-size: 18px;
   color: white !important;
 }
 
@@ -87,6 +91,20 @@ canvas.particles-js-canvas-el {
   background-color: white;
   position: absolute;
   bottom: 8px;
+}
+.navbar-collapse {
+  padding-right: 140px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /* Hero Section */
@@ -420,6 +438,7 @@ p {
 .contact_section {
   background: #282a39;
   padding-bottom: 170px;
+  padding-top: 100px;
 }
 .contact_section .heading {
   font-weight: 600;
