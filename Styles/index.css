@@ -403,6 +403,15 @@ p {
   border: 2px solid white;
 }
 
+.portfolio_section .tab-content .card:hover {
+  transform: scale(1.02);
+}
+
+.portfolio_section img {
+  height: 185px;
+  object-fit: cover;
+}
+
 /* Blogs Section */
 .blogs_section {
   background: #282a39;
